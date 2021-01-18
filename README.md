@@ -1,3 +1,7 @@
+# sadfasdfasdf
+
+setSearchTerm("")
+
 # CoderSchool FTW - _GitHub Issues Team 1_
 
 Created with love by: `Jade Ha Tuan Thang`
