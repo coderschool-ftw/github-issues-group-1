@@ -1,0 +1,207 @@
+.App {
+  /* Prevent jumping scrollbar  */
+  padding-right: calc(17px - (100vw - 100%));
+}
+
+.main-title {
+  padding: 3rem 0 1.5rem 0;
+}
+
+.issues {
+  /* margin-top: 21em; */
+  padding: 0;
+}
+
+/* ========================================================
+                       SEARCH FORM
+==========================================================*/
+
+.search-form-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 2px -2px gray;
+}
+
+.search-form-wrapper input,
+.search-form-wrapper button {
+  margin: 1em 0.5em;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-form-wrapper input {
+  height: 3em;
+  width: 50vw;
+  border: 1.5px solid rgb(202, 202, 202);
+  padding: 0 1rem;
+}
+
+.search-form-wrapper button {
+  height: 3rem;
+  width: 5em;
+  background-color: #d64641;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.error-message-wrapper {
+  border: 2px solid #d64641;
+  border-radius: 20px;
+  min-height: 10rem;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================================
+                          ISSUES
+==========================================================*/
+.issues {
+  padding-left: 0;
+}
+
+.issue-item {
+  padding: 1rem 0;
+  display: flex;
+  margin: 1rem 1rem;
+  padding: 1rem;
+
+  /* Google's weather card */
+  border-radius: 8px;
+  border: 1px solid #dfe1e5;
+  /* justify-content: center; */
+  border-bottom: 1px solid lightgray;
+}
+.issue-item .content-body {
+  /* width: calc(90% - 9em); */
+  width: 100%;
+}
+
+.issue-item .content-body h4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.issue-item .content-body .title {
+  margin-right: 0.8rem;
+  font-weight: bold;
+}
+
+.issue-item:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.issue-item ul li {
+  list-style-type: none;
+}
+
+.issue-item .avatar {
+  min-width: 2em;
+  height: 2em;
+}
+
+.issue-item .title {
+  min-width: 5em;
+}
+
+.issue-item .gray-text {
+  color: rgb(145, 145, 145);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.issue-item .number {
+  margin-right: 0.5rem;
+}
+
+.issue__body {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ========================================================
+                         LABELS
+==========================================================*/
+ul.reset {
+  text-indent: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.labels li,
+ul.labels ul li {
+  margin: 0;
+}
+
+.labels {
+  display: inline;
+}
+
+.issue-item .user-id {
+  color: #d646419f;
+}
+
+.issue-item .description {
+  height: 7.5em;
+  font-size: 1.5rem;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  margin: 1rem 0;
+  text-justify: inter-word;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  /* -ms-overflow-style: none; IE and Edge
+  scrollbar-width: none; Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .description::-webkit-scrollbar {
+  display: none;
+} */
+
+.issue-item .time-and-comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.issue-item .content-body .last-updated {
+  margin-right: 0.5rem;
+}
+
+.Spinner {
+  display: flex;
+  justify-content: center;
+}
+
+.Modal {
+  padding-right: 17px;
+}
+
+.Modal .modal-title {
+  font-weight: bold;
+}
+
+.Modal .modal-dialog {
+  max-width: 992px;
+}
+
+.Modal .modal-content {
+  padding: 1rem;
+  word-break: break-all;
+}
+
+.Modal .modal-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
